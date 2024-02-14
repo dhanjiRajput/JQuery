@@ -27,7 +27,7 @@ $("#btn7").mouseenter(()=>{
 })
 
 $("#btn8").mouseleave(()=>{
-    $("img").attr("src","images2.png");
+    $("img").attr("src","image.jpg");
 })
 
 $("#btn9").click(()=>{
