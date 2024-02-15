@@ -34,6 +34,26 @@ $("#btn9").click(()=>{
     $("img").attr("src","image.jpg");
 })
 
+$("#btn10").click(()=>{
+    $("img").fadeOut(4000);
+})
+
+$("#btn11").click(()=>{
+    $("img").fadeIn(4000);
+})
+
+$("#btn12").click(()=>{
+    $("img").fadeToggle(4000);
+})
+
+$("#btn13").click(()=>{
+    $(".b1").addClass("b2");
+})
+
+$("#btn14").click(()=>{
+    $(".b1").removeClass("b2");
+})
+
 
 
 
