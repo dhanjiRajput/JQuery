@@ -40,16 +40,16 @@ img:hover{
 
 .b2{
     padding: 10px;
-    color: black;
-    background-color: rgb(81, 199, 253);
+    color: blue;
+    background-color: rgb(140, 255, 146);
     border-radius: 5px;
     border-style: none;
-    font-size: 20px;
-    font-weight:900;
+    font-size: 22px;
+    font-weight:bolder;
     transition-duration: 1s;
     margin-right: 15px;
     cursor: pointer;
-    font-family: sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     
 }
