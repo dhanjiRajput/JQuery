@@ -1,0 +1,4 @@
+$("#bar").click(()=>{
+    $("#link").slideToggle();
+})
+
