@@ -115,8 +115,12 @@
     }
 
     #bar:hover{
-        transform: scale(1.2);
+        transform: scale(1.3);
         transform: rotate(180deg);
+    }
+
+    .column{
+        flex-direction: column;
     }
 }
 
@@ -153,7 +157,6 @@
     width:fit-content;
     padding: 20px;
     border-radius: 10px;
-    margin-left: 4%;
     margin-top: 5%;
 }
 
@@ -166,6 +169,12 @@
     border-radius: 8px;
     color: rgb(65, 65, 65);
     margin-right: 10px;
+}
+
+#mainselect{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 button{
@@ -211,21 +220,53 @@ button:hover {
   transform: scale(1.05);
 }
 
-#hotels{
-    margin-top: 10px;
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 30px;
+	padding: 30px;
+	overflow: hidden;
+    border-radius: 10px;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+.column {
+	margin-top: 30px;
+	padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    border-radius: 10px;
 }
-
-#hotel1{
-    height: 350px;
-    width: 350px;
-    background-image: url("maldives.jpg");
+.column:last-child {
+	padding-bottom: 60px;
 }
-
-#hotelimg{
-    transition-duration: 0.7s;
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
 }
-#hotelimg:hover{
-    transform: scale(1.03);
+.column div {
+	position: relative;
+	width: 300px;
+	height: 200px;
+    margin-left: 80px;
+	padding: 10px;
+    border-radius: 10px;
+}
+.column div:first-child {
+	margin-left: 0;
 }
