@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 #navtext{
@@ -142,6 +143,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     text-align: center;
+    width: 98%;
 }
 
 #heven{
@@ -237,6 +239,7 @@ button:hover {
     grid-template-columns: repeat(3,1fr);
     gap: 50px;
     padding: 30px;
+    width: 100%;
 }
 
 #image{
@@ -285,7 +288,7 @@ button:hover {
 #txt3{
     font-weight: bolder;
     font-size: 50px;
-    color: black;
+    color: green;
     word-spacing: 10px;
 }
 
@@ -299,7 +302,7 @@ button:hover {
     text-decoration: none;
     font-size: 20px;
     font-weight: bolder;
-    color:black;
+    color:green;
     margin-left: 20px;
     font-family:sans-serif ;
     position: relative;
@@ -311,7 +314,7 @@ button:hover {
     width: 100%;
     height: 4px;
     border-radius: 1px;
-    background-color:black;
+    background-color:greenyellow;
     bottom: -5px;
     left: 0;
     transform-origin: center;

@@ -3,5 +3,10 @@ $("#bar").click(()=>{
 })
 
 $("#box").mouseenter(()=>{
-    $()
+    $("#img1").attr("src","img1.1.jpg");
 })
+
+$("#box").mouseleave(()=>{
+    $("#img1").attr("src","img1.jpg");
+})
+
