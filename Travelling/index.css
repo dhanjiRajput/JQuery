@@ -369,3 +369,10 @@ button:hover {
     transition: transform 0.5s ease;
     border-radius: 5px;
 }
+
+#s1{
+    font-weight: bolder;
+}
+#s2{
+    color: orangered;
+}
