@@ -4,12 +4,47 @@
     box-sizing: border-box;
 }
 
+#up{
+    padding: 10px;
+    background-color: darkgrey;
+    position: absolute;
+    top: 90%;
+    left: 95%;
+    z-index: 2;
+    position: fixed;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 45%;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition-duration: 0.5s;
+}
+
+#up:hover{
+    background-color: black;
+    box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+    transform: scale(1.05);
+}
+
+#a3{
+    text-decoration: none;
+    color: black;
+}
+
+#a3:hover{
+    color: white;
+}
+
 #nav{
     background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: absolute;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
 }
 
 #navtext{
@@ -17,6 +52,7 @@
     font-size: 27px;
     font-family: sans-serif;
     font-weight: bolder;
+    padding-right: 10px;
 }
 
 #divimg{
@@ -74,68 +110,6 @@
     display: none;
 }
 
-@media(max-width:768px){
-    #nav{
-        background-color: black;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #a1{
-        margin-bottom: 15px;
-    }
-    #link{
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    #navtext{
-        display: none;
-    }
-
-    #divimg{
-        display: none;
-    }
-
-    #login{
-        display: none;
-    }
-
-    #bar{
-        cursor: pointer;
-        display: block;
-        color: white;
-        font-size: 30px;
-        font-weight: bolder;
-        margin-left: 15px;
-        margin-top: 15px;
-        transition-duration: 0.5s;
-    }
-
-    #bar:hover{
-        transform: scale(1.3);
-        transform: rotate(180deg);
-    }
-
-    #hotel{
-        margin-top: 230px;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        padding: 20px;
-        gap: 20px;
-    }
-
-    #product{
-        margin-top: 230px;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        padding: 20px;
-        gap: 20px;
-    }
-}
-
 #bgimage{
     margin: 15px;
     height: 700px;
@@ -144,6 +118,7 @@
     background-repeat: no-repeat;
     text-align: center;
     width: 98%;
+    margin-top: 67px;
 }
 
 #heven{
@@ -303,9 +278,9 @@ button:hover {
     font-size: 20px;
     font-weight: bolder;
     color:green;
-    margin-left: 20px;
     font-family:sans-serif ;
     position: relative;
+    margin-right: 20px;
 }
 
 #navlink1::before {
@@ -329,14 +304,15 @@ button:hover {
 
   #link1{
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    width: 30%;
 }
 
 #link11{
     display: flex;
     justify-content: center;
+    width: 100%;
+    align-items: center;
 }
 
 #product{
@@ -354,7 +330,19 @@ button:hover {
     transition: transform 0.5s ease;
     background-color: #fff;
     border-radius: 7px;
+    position: relative;
+}
 
+#texthotel{
+    position: absolute;
+    width: fit-content;
+    background-color:white;
+    border-radius: 0px 3px 3px 0px;
+    top: 11%;
+    font-size: 15px;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 12px;
 }
 
 #box:hover{
@@ -378,4 +366,198 @@ button:hover {
 }
 #s2{
     color: orangered;
+}
+
+#h1{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    max-width: 100%;
+}
+
+#h1img{
+    height: 500px;
+    width: 92%;
+    background-color: rgb(77, 171, 248);
+    position: relative;
+}
+
+#h1image{
+    margin-top: 40px;
+    margin-left: 40px;
+    transition-duration: 1s;
+}
+
+#h1image:hover{
+    transform: translateY(-8px);
+}
+
+#o1{
+    position: absolute;
+    top: 7%;
+    left: 2%;
+    color: white;
+    font-size: 150px;
+    font-weight: bolder;
+}
+
+#h1text{
+    height: 500px;
+}
+
+#h11text{
+    font-size: 50px;
+}
+
+#h12text{
+    font-size: 20px;
+}
+
+#generaltext2{
+    margin-top: 80px;
+    text-align: center;
+}
+
+#offers{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+#offerbox{
+    text-align: center;
+}
+
+#offertext1{
+    font-size: 25px;
+}
+
+#offertext2{
+    font-size: 18px;
+}
+
+#photos{
+    position: relative;
+    height: 100%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+#reviewbg{
+    margin-top: 20px;
+    height: 600px;
+    background-image: url("review.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    max-width: 100%;
+    position: relative;
+}
+
+#generaltext3{
+    padding-top: 40px;
+    text-align: center;
+}
+@media(max-width:768px){
+    #nav{
+        background-color: black;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #a1{
+        margin-bottom: 15px;
+    }
+    #link{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    #login{
+        display: none;
+    }
+
+    #bar{
+        cursor: pointer;
+        display: block;
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+        margin-left: 15px;
+        margin-top: 15px;
+        transition-duration: 0.5s;
+    }
+
+    #bar:hover{
+        transform: scale(1.3);
+        transform: rotate(180deg);
+    }
+
+    #hotel{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #product{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #generaltext{
+        margin-top: 1300px;
+        text-align: center;
+    }
+
+    #link1{
+        display: flex;
+        align-items: center;
+    }
+
+    #a1{
+        margin-right: 10px;
+    }
+
+    #h1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #offers{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
 }
