@@ -1,0 +1,55 @@
+#text1{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#text2{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#main{
+    display: flex;
+}
+
+#add{
+    height: 40px;
+    width: 50%;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#form{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#sub{
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+#p1{
+    height: 40px;
+    width: 60%;
+    border: 2px solid;
+    background-color: beige;
+    margin-left: 20%;
+    border-radius: 5px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.modeback{
+    background-color: black;
+}
+
+.modetext{
+    color: white;
+}
